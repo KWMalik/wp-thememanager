@@ -59,3 +59,7 @@ limitations under the License.
 1.1:
 
 * Adds Accent Brush features and functionality. Use the `ThemeManager.SetAccentColor(...)` overrides.
+
+1.2:
+
+* Adds Custom Theme support. Use `ThemeManager.SetCustomTheme(...)`
