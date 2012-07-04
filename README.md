@@ -23,7 +23,7 @@ This allows you to style your app how you used to in 7.0, but taking the ThemeRe
 
 What makes the custom theme support cool is you can embed your altered ThemeResources.xaml as a MergedDictionary in your app.xaml, this allows you to see those changes at design time and use them easily in Blend.
 
-To then set the custom theme, just call `ThemeManager.SetCustomTheme(rd, Theme.Light)` where rd is a link to your ResourceDictionary. You also need to specify whether to override the Dark or Light theme, this is a fall back for if you have removed some of the colours from your Resource Dictionary.
+To then set the custom theme, just call `ThemeManager.SetCustomTheme(rd, Theme.Light)` where rd is a `ResourceDictionary` version of your xaml. You also need to specify whether to override the Dark or Light theme, this is a fall back for if you have removed some of the colours from your Resource Dictionary.
 
 **NOTE:** Do not put anything else in your modified ThemeResources.xaml that you will later need (if putting it in the MergedDictionary section) as part of the process is to remove the MergedDictionary once the theme has been set. For some reason if you don't the PhoneForegroundBrush doesn't stay set.
 
